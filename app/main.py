@@ -33,3 +33,5 @@ app.include_router(api_router)
 def health_check() -> dict[str, str]:
     """Health check endpoint."""
     return {"status": "ok"}
+
+init_db()
